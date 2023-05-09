@@ -17,7 +17,7 @@ app.use(cors());
 //GET o POsT
 
 app.get('/',(req,res)=>{
-    res.render('index');
+    res.render('advance-table');
 })
 
 app.get('/login',(req,res)=>{

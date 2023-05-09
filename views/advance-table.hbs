@@ -1779,7 +1779,255 @@
                                   <!-- Modal body -->
                                   <div class="p-6 space-y-4">
                                     <div class="card-text h-full space-y-4">
-                                      <p>Esta seguro que quiere eliminar la categoria de Alimentos y vevidas?</p>   
+                                      <p>Esta seguro que quiere eliminar la categoria de Alimentos y Bebidas?</p>   
+                                    </div>
+                                  </div>
+                                  <!-- Modal footer -->
+                                  <div class="flex items-center p-6 space-x-2 border-t border-slate-200 rounded-b dark:border-slate-600">
+                                    <button data-bs-dismiss="modal" class="btn inline-flex justify-center text-white bg-danger-500">Eliminar</button>
+                                    <button data-bs-dismiss="modal" class="btn inline-flex justify-center text-white bg-secondary-500">Cancelar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                        
+                        
+                        <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="updateModal1" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+                            <div class="modal-dialog top-1/2 !-translate-y-1/2 relative w-auto pointer-events-none">
+                              <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding
+                                            rounded-md outline-none text-current">
+                                <div class="relative bg-white rounded-lg shadow dark:bg-slate-700">
+                                  <!-- Modal header -->
+                                  <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-slate-600 bg-primary-500">
+                                    <h3 class="text-base font-medium text-white dark:text-white capitalize">
+                                      Actualizar categorias
+                                    </h3>
+                                    <button type="button" class="text-slate-400 bg-transparent hover:text-slate-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center
+                                                        dark:hover:bg-slate-600 dark:hover:text-white" data-bs-dismiss="modal">
+                                      <svg aria-hidden="true" class="w-5 h-5" fill="#ffffff" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10
+                                                                11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                      </svg>
+                                      <span class="sr-only">Close modal</span>
+                                    </button>
+                                  </div>
+                                  <!-- Modal body -->
+                                  <div class="p-6 space-y-4">
+                                    <div class="card-text h-full space-y-4">
+                                        <div class="input-area">
+                                          <label for="name" class="form-label">Nombre*</label>
+                                          <input id="name" type="text" class="form-control" placeholder="Digite nombre de categoria">
+                                        </div>
+                        
+                        
+                                        <div class="input-area">
+                                          <label for="description" class="form-label">Observaciones</label>
+                                          <textarea id="description" rows="5" class="form-control" placeholder="Digite observaciones"></textarea>
+                                        </div>
+          
+                                      </div>
+                                  </div>
+                                  <!-- Modal footer -->
+                                  <div class="flex items-center p-6 space-x-2 border-t border-slate-200 rounded-b dark:border-slate-600">
+                                    <button data-bs-dismiss="modal" class="btn inline-flex justify-center text-white bg-primary-500">Actualizar</button>
+                                    <button data-bs-dismiss="modal" class="btn inline-flex justify-center text-white bg-secondary-500">Cancelar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="viewModal1" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+                            <div class="modal-dialog top-1/2 !-translate-y-1/2 relative w-auto pointer-events-none">
+                              <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding
+                                            rounded-md outline-none text-current">
+                                <div class="relative bg-white rounded-lg shadow dark:bg-slate-700">
+                                  <!-- Modal header -->
+                                  <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-slate-600 bg-warning-500">
+                                    <h3 class="text-base font-medium text-white dark:text-white capitalize">
+                                      Visualizar categoria
+                                    </h3>
+                                    <button type="button" class="text-slate-400 bg-transparent hover:text-slate-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center
+                                                        dark:hover:bg-slate-600 dark:hover:text-white" data-bs-dismiss="modal">
+                                      <svg aria-hidden="true" class="w-5 h-5" fill="#ffffff" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10
+                                                                11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                      </svg>
+                                      <span class="sr-only">Close modal</span>
+                                    </button>
+                                  </div>
+                                  <!-- Modal body -->
+                                  <div class="p-6 space-y-4">
+                                    <div class="card-text h-full space-y-4">
+                                        <div class="input-area">
+                                          <label for="name" class="form-label">Nombre*</label>
+                                          <input id="name" type="text" class="form-control" placeholder="Digite nombre de categoria" value="Ropa y Accesorios" readonly>
+                                        </div>
+                        
+                        
+                                        <div class="input-area">
+                                          <label for="description" class="form-label">Observaciones</label>
+                                          <textarea id="description" rows="5" class="form-control" placeholder="Digite observaciones" readonly>Para ropa y accesorios</textarea>
+                                        </div>
+          
+                                      </div>
+                                  </div>
+                                  <!-- Modal footer -->
+                                  <div class="flex items-center p-6 space-x-2 border-t border-slate-200 rounded-b dark:border-slate-600">
+                                    <button data-bs-dismiss="modal" class="btn inline-flex justify-center text-white bg-warning-500">Cerrar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="deleteModal1" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+                            <div class="modal-dialog top-1/2 !-translate-y-1/2 relative w-auto pointer-events-none">
+                              <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding
+                                            rounded-md outline-none text-current">
+                                <div class="relative bg-white rounded-lg shadow dark:bg-slate-700">
+                                  <!-- Modal header -->
+                                  <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-slate-600 bg-danger-500">
+                                    <h3 class="text-base font-medium text-white dark:text-white capitalize">
+                                      Eliminar categoria
+                                    </h3>
+                                    <button type="button" class="text-slate-400 bg-transparent hover:text-slate-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center
+                                                        dark:hover:bg-slate-600 dark:hover:text-white" data-bs-dismiss="modal">
+                                      <svg aria-hidden="true" class="w-5 h-5" fill="#ffffff" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10
+                                                                11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                      </svg>
+                                      <span class="sr-only">Close modal</span>
+                                    </button>
+                                  </div>
+                                  <!-- Modal body -->
+                                  <div class="p-6 space-y-4">
+                                    <div class="card-text h-full space-y-4">
+                                      <p>Esta seguro que quiere eliminar la categoria de Ropa y Accesorios?</p>   
+                                    </div>
+                                  </div>
+                                  <!-- Modal footer -->
+                                  <div class="flex items-center p-6 space-x-2 border-t border-slate-200 rounded-b dark:border-slate-600">
+                                    <button data-bs-dismiss="modal" class="btn inline-flex justify-center text-white bg-danger-500">Eliminar</button>
+                                    <button data-bs-dismiss="modal" class="btn inline-flex justify-center text-white bg-secondary-500">Cancelar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                        
+                        
+                        
+                        
+                        <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="updateModal2" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+                            <div class="modal-dialog top-1/2 !-translate-y-1/2 relative w-auto pointer-events-none">
+                              <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding
+                                            rounded-md outline-none text-current">
+                                <div class="relative bg-white rounded-lg shadow dark:bg-slate-700">
+                                  <!-- Modal header -->
+                                  <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-slate-600 bg-primary-500">
+                                    <h3 class="text-base font-medium text-white dark:text-white capitalize">
+                                      Actualizar categorias
+                                    </h3>
+                                    <button type="button" class="text-slate-400 bg-transparent hover:text-slate-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center
+                                                        dark:hover:bg-slate-600 dark:hover:text-white" data-bs-dismiss="modal">
+                                      <svg aria-hidden="true" class="w-5 h-5" fill="#ffffff" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10
+                                                                11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                      </svg>
+                                      <span class="sr-only">Close modal</span>
+                                    </button>
+                                  </div>
+                                  <!-- Modal body -->
+                                  <div class="p-6 space-y-4">
+                                    <div class="card-text h-full space-y-4">
+                                        <div class="input-area">
+                                          <label for="name" class="form-label">Nombre*</label>
+                                          <input id="name" type="text" class="form-control" placeholder="Digite nombre de categoria">
+                                        </div>
+                        
+                        
+                                        <div class="input-area">
+                                          <label for="description" class="form-label">Observaciones</label>
+                                          <textarea id="description" rows="5" class="form-control" placeholder="Digite observaciones"></textarea>
+                                        </div>
+          
+                                      </div>
+                                  </div>
+                                  <!-- Modal footer -->
+                                  <div class="flex items-center p-6 space-x-2 border-t border-slate-200 rounded-b dark:border-slate-600">
+                                    <button data-bs-dismiss="modal" class="btn inline-flex justify-center text-white bg-primary-500">Actualizar</button>
+                                    <button data-bs-dismiss="modal" class="btn inline-flex justify-center text-white bg-secondary-500">Cancelar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="viewModal2" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+                            <div class="modal-dialog top-1/2 !-translate-y-1/2 relative w-auto pointer-events-none">
+                              <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding
+                                            rounded-md outline-none text-current">
+                                <div class="relative bg-white rounded-lg shadow dark:bg-slate-700">
+                                  <!-- Modal header -->
+                                  <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-slate-600 bg-warning-500">
+                                    <h3 class="text-base font-medium text-white dark:text-white capitalize">
+                                      Visualizar categoria
+                                    </h3>
+                                    <button type="button" class="text-slate-400 bg-transparent hover:text-slate-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center
+                                                        dark:hover:bg-slate-600 dark:hover:text-white" data-bs-dismiss="modal">
+                                      <svg aria-hidden="true" class="w-5 h-5" fill="#ffffff" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10
+                                                                11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                      </svg>
+                                      <span class="sr-only">Close modal</span>
+                                    </button>
+                                  </div>
+                                  <!-- Modal body -->
+                                  <div class="p-6 space-y-4">
+                                    <div class="card-text h-full space-y-4">
+                                        <div class="input-area">
+                                          <label for="name" class="form-label">Nombre*</label>
+                                          <input id="name" type="text" class="form-control" placeholder="Digite nombre de categoria" value="Tecnologia y electronica" readonly>
+                                        </div>
+                        
+                        
+                                        <div class="input-area">
+                                          <label for="description" class="form-label">Observaciones</label>
+                                          <textarea id="description" rows="5" class="form-control" placeholder="Digite observaciones" readonly>Para tecnologia y electronica</textarea>
+                                        </div>
+          
+                                      </div>
+                                  </div>
+                                  <!-- Modal footer -->
+                                  <div class="flex items-center p-6 space-x-2 border-t border-slate-200 rounded-b dark:border-slate-600">
+                                    <button data-bs-dismiss="modal" class="btn inline-flex justify-center text-white bg-warning-500">Cerrar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="deleteModal2" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+                            <div class="modal-dialog top-1/2 !-translate-y-1/2 relative w-auto pointer-events-none">
+                              <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding
+                                            rounded-md outline-none text-current">
+                                <div class="relative bg-white rounded-lg shadow dark:bg-slate-700">
+                                  <!-- Modal header -->
+                                  <div class="flex items-center justify-between p-5 border-b rounded-t dark:border-slate-600 bg-danger-500">
+                                    <h3 class="text-base font-medium text-white dark:text-white capitalize">
+                                      Eliminar categoria
+                                    </h3>
+                                    <button type="button" class="text-slate-400 bg-transparent hover:text-slate-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center
+                                                        dark:hover:bg-slate-600 dark:hover:text-white" data-bs-dismiss="modal">
+                                      <svg aria-hidden="true" class="w-5 h-5" fill="#ffffff" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10
+                                                                11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                      </svg>
+                                      <span class="sr-only">Close modal</span>
+                                    </button>
+                                  </div>
+                                  <!-- Modal body -->
+                                  <div class="p-6 space-y-4">
+                                    <div class="card-text h-full space-y-4">
+                                      <p>Esta seguro que quiere eliminar la categoria de tecnologia y electronica?</p>   
                                     </div>
                                   </div>
                                   <!-- Modal footer -->
@@ -1834,157 +2082,34 @@
                                   <td class="table-td">Ropa y Accesorios</td>
                                   <td class="table-td ">
                                     <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#viewModal1" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:eye"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#updateModal1" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#deleteModal1" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                       </button>
                                     </div>
                                   </td>
                                 </tr>
-                                <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
-                                    <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:eye"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:trash"></iconify-icon>
-                                      </button>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
-                                    <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:eye"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:trash"></iconify-icon>
-                                      </button>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
-                                    <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:eye"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:trash"></iconify-icon>
-                                      </button>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
-                                    <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:eye"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:trash"></iconify-icon>
-                                      </button>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
-                                    <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:eye"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:trash"></iconify-icon>
-                                      </button>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
-                                    <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:eye"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:trash"></iconify-icon>
-                                      </button>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
-                                    <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:eye"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:trash"></iconify-icon>
-                                      </button>
-                                    </div>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td class="table-td">Ropa y Accesorios</td>
-                                  <td class="table-td ">
-                                    <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:eye"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
-                                      </button>
-                                      <button class="action-btn" type="button">
-                                        <iconify-icon icon="heroicons:trash"></iconify-icon>
-                                      </button>
-                                    </div>
-                                  </td>
-                                </tr>
+                                
+                               
+                                
+                                
+                                
                                 <tr>
                                   <td class="table-td">Tecnología y Electrónica</td>
                                   <td class="table-td ">
                                     <div class="flex space-x-3 rtl:space-x-reverse">
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#viewModal2" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:eye"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#updateModal2" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:pencil-square"></iconify-icon>
                                       </button>
-                                      <button class="action-btn" type="button">
+                                      <button data-bs-toggle="modal" data-bs-target="#deleteModal2" class="action-btn" type="button">
                                         <iconify-icon icon="heroicons:trash"></iconify-icon>
                                       </button>
                                     </div>
